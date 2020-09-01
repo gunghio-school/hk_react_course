@@ -1,9 +1,17 @@
 import React from "react";
-import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Breadcrumb,
+  BreadcrumbItem,
+} from "reactstrap";
 import { Link } from "react-router-dom";
 import CommentForm from "./CommentForm";
 
-function RenderDish({ selectedDish }) {
+function RenderDish({selectedDish }) {
   if (selectedDish) {
     return (
       <Card>
@@ -48,8 +56,8 @@ function RenderComments({ comments }) {
   }
   return <div></div>;
 }
-const Dishdetail = ({ dish, comments }) => {
-  console.log(dish, comments)
+const Dishdetail = ({ dish, comments, addComment }) => {
+  console.log(dish, comments);
   return (
     <div className="container">
       <div className="row">
@@ -73,9 +81,11 @@ const Dishdetail = ({ dish, comments }) => {
         </div>
         <div className="col-12 col-md-5 m-1">
           <RenderComments comments={comments}></RenderComments>
-          <CommentForm></CommentForm>
+          <CommentForm
+            addComment={addComment}
+            dishId={dish.id}
+          ></CommentForm>
         </div>
-
       </div>
     </div>
   );

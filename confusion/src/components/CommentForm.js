@@ -9,14 +9,20 @@ import {
 } from "reactstrap";
 import { LocalForm, Control, Errors } from "react-redux-form";
 
-
-const CommentForm = (props) => {
+const CommentForm = ({ addComment, dishId }) => {
   const [modal, setModal] = useState(false);
   const required = (val) => val && val.length;
-  const maxLength = (len) => (val) => !(val) || (val.length <= len);
-  const minLength = (len) => (val) => val && (val.length >= len);
+  const maxLength = (len) => (val) => !val || val.length <= len;
+  const minLength = (len) => (val) => val && val.length >= len;
 
   const toggle = () => setModal(!modal);
+
+  const handleSubmit = (values) => {
+    console.log("Comment is: ", JSON.stringify(values));
+    toggle();
+    addComment(dishId, values.rating, values.author, values.comment);
+  };
+
   return (
     <div>
       <Button onClick={toggle} outline variant="outline-primary">
@@ -24,10 +30,9 @@ const CommentForm = (props) => {
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Submit comment</ModalHeader>
-        <ModalBody>
-          <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+        <LocalForm onSubmit={(values) => handleSubmit(values)}>
+          <ModalBody>
             <Label htmlForm="rating">Rating</Label>
-
             <Control.select
               model=".rating"
               name="rating"
@@ -67,11 +72,13 @@ const CommentForm = (props) => {
               name="comment"
               className="form-control"
             ></Control.textarea>
-          </LocalForm>
-        </ModalBody>
-        <ModalFooter>
-          <Button color="primary">Submit comment</Button>
-        </ModalFooter>
+          </ModalBody>
+          <ModalFooter>
+            <Button type="submit" color="primary">
+              Submit comment
+            </Button>
+          </ModalFooter>
+        </LocalForm>
       </Modal>
     </div>
   );

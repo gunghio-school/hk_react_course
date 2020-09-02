@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
   Breadcrumb,
   BreadcrumbItem,
+  Card,
+  CardBody,
+  CardImg,
+  CardText,
+  CardTitle
 } from "reactstrap";
-import { Link } from "react-router-dom";
 import CommentForm from "./CommentForm";
+import { LoadingComponent } from "./LoadingComponent";
 
-function RenderDish({selectedDish }) {
+function RenderDish({ selectedDish }) {
   if (selectedDish) {
     return (
       <Card>
@@ -56,39 +57,53 @@ function RenderComments({ comments }) {
   }
   return <div></div>;
 }
-const Dishdetail = ({ dish, comments, addComment }) => {
-  console.log(dish, comments);
-  return (
-    <div className="container">
-      <div className="row">
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <Link to="/home">Home</Link>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <Link to="/menu">Menu</Link>
-          </BreadcrumbItem>
-          <BreadcrumbItem active>{dish.name}</BreadcrumbItem>
-        </Breadcrumb>
-        <div className="col-12">
-          <h3>{dish.name}</h3>
-          <hr />
+const Dishdetail = ({ dish, comments, addComment, isLoading, errorMessage }) => {
+  if (isLoading) {
+    return (
+      <div className="container">
+        <div className="row">
+          <LoadingComponent />
         </div>
       </div>
-      <div className="row">
-        <div className="col-12 col-md-5 m-1">
-          <RenderDish selectedDish={dish}></RenderDish>
-        </div>
-        <div className="col-12 col-md-5 m-1">
-          <RenderComments comments={comments}></RenderComments>
-          <CommentForm
-            addComment={addComment}
-            dishId={dish.id}
-          ></CommentForm>
+    );
+  } else if (errorMessage) {
+    return (
+      <div className="container">
+        <div className="row">
+          <h4>{errorMessage}</h4>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else if (dish != null) {
+    return (
+      <div className="container">
+        <div className="row">
+          <Breadcrumb>
+            <BreadcrumbItem>
+              <Link to="/home">Home</Link>
+            </BreadcrumbItem>
+            <BreadcrumbItem>
+              <Link to="/menu">Menu</Link>
+            </BreadcrumbItem>
+            <BreadcrumbItem active>{dish.name}</BreadcrumbItem>
+          </Breadcrumb>
+          <div className="col-12">
+            <h3>{dish.name}</h3>
+            <hr />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-md-5 m-1">
+            <RenderDish selectedDish={dish}></RenderDish>
+          </div>
+          <div className="col-12 col-md-5 m-1">
+            <RenderComments comments={comments}></RenderComments>
+            <CommentForm addComment={addComment} dishId={dish.id}></CommentForm>
+          </div>
+        </div>
+      </div>
+    );
+  }
 };
 
 export default Dishdetail;

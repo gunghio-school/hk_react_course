@@ -9,6 +9,7 @@ import {
   CardText,
   CardTitle
 } from "reactstrap";
+import { baseUrl } from "../shared/baseUrl";
 import CommentForm from "./CommentForm";
 import { LoadingComponent } from "./LoadingComponent";
 
@@ -17,8 +18,8 @@ function RenderDish({ selectedDish }) {
     return (
       <Card>
         <CardImg
-          width="100%"
-          src={selectedDish.image}
+          top
+          src={baseUrl + selectedDish.image}
           alt={selectedDish.name}
         />
         <CardBody>
@@ -57,7 +58,13 @@ function RenderComments({ comments }) {
   }
   return <div></div>;
 }
-const Dishdetail = ({ dish, comments, addComment, isLoading, errorMessage }) => {
+const DishDetail = ({
+  dish,
+  comments,
+  addComment,
+  isLoading,
+  errorMessage,
+}) => {
   if (isLoading) {
     return (
       <div className="container">
@@ -106,4 +113,4 @@ const Dishdetail = ({ dish, comments, addComment, isLoading, errorMessage }) => 
   }
 };
 
-export default Dishdetail;
+export default DishDetail;

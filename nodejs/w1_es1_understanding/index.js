@@ -1,8 +1,5 @@
 /* eslint-disable no-console */
-const rect = {
-  perimeter: (x, y) => 2 * (x + y),
-  area: (x, y) => x * y,
-};
+const rect = require('./rectangle');
 
 function solveRect(l, b) {
   console.log(`Solving for rectangle with l = ${l} and b = ${b}`);

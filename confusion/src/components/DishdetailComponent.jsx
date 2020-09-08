@@ -19,7 +19,7 @@ function RenderDish({ selectedDish }) {
       <Card>
         <CardImg
           top
-          src={baseUrl + selectedDish.image}
+          src={baseUrl + '/' + selectedDish.image}
           alt={selectedDish.name}
         />
         <CardBody>
@@ -61,7 +61,7 @@ function RenderComments({ comments }) {
 const DishDetail = ({
   dish,
   comments,
-  addComment,
+  postComment,
   isLoading,
   errorMessage,
 }) => {
@@ -105,7 +105,7 @@ const DishDetail = ({
           </div>
           <div className="col-12 col-md-5 m-1">
             <RenderComments comments={comments}></RenderComments>
-            <CommentForm addComment={addComment} dishId={dish.id}></CommentForm>
+            <CommentForm postComment={postComment} dishId={dish.id}></CommentForm>
           </div>
         </div>
       </div>

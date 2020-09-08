@@ -1,15 +1,15 @@
 import React, { useState } from "react";
+import { Control, Errors, LocalForm } from "react-redux-form";
 import {
   Button,
+  Label,
   Modal,
-  ModalHeader,
   ModalBody,
   ModalFooter,
-  Label,
+  ModalHeader
 } from "reactstrap";
-import { LocalForm, Control, Errors } from "react-redux-form";
 
-const CommentForm = ({ addComment, dishId }) => {
+const CommentForm = ({ postComment, dishId }) => {
   const [modal, setModal] = useState(false);
   const required = (val) => val && val.length;
   const maxLength = (len) => (val) => !val || val.length <= len;
@@ -20,7 +20,7 @@ const CommentForm = ({ addComment, dishId }) => {
   const handleSubmit = (values) => {
     console.log("Comment is: ", JSON.stringify(values));
     toggle();
-    addComment(dishId, values.rating, values.author, values.comment);
+    postComment(dishId, values.rating, values.author, values.comment);
   };
 
   return (

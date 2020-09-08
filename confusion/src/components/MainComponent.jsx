@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { actions } from "react-redux-form";
 import { Redirect, Route, Switch, withRouter } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import {
   addComment,
   fetchComments,
   fetchDishes,
-  fetchPromos
+  fetchPromos,
+  postComment
 } from "../redux/ActionCreators";
 import About from "./AboutComponents";
 import Contact from "./ContactComponent";
@@ -34,6 +36,8 @@ const mapDispatchToPros = (dispatch) => ({
   },
   fetchComments: () => dispatch(fetchComments()),
   fetchPromos: () => dispatch(fetchPromos()),
+  postComment: (dishId, rating, author, comment) =>
+    dispatch(postComment(dishId, rating, author, comment)),
 });
 
 class Main extends Component {
@@ -51,7 +55,9 @@ class Main extends Component {
           dishesLoading={this.props.dishes.isLoading}
           dishesErrMess={this.props.dishes.errMess}
           promotion={
-            this.props.promotions.promotions.filter((promotion) => promotion.featured)[0]
+            this.props.promotions.promotions.filter(
+              (promotion) => promotion.featured
+            )[0]
           }
           promoLoading={this.props.promotions.isLoading}
           promoErrMess={this.props.promotions.errMess}
@@ -64,6 +70,7 @@ class Main extends Component {
       console.log(match);
       return (
         <DishDetail
+          postComment={this.props.postComment}
           isLoading={this.props.dishes.isLoading}
           errorMessage={this.props.errMess}
           dish={
@@ -71,7 +78,7 @@ class Main extends Component {
               (dish) => dish.id === parseInt(match.params.dishId, 10)
             )[0]
           }
-          comments={this.props.comments.filter(
+          comments={this.props.comments.comments.filter(
             (comment) => comment.dishId === parseInt(match.params.dishId, 10)
           )}
           commentsErrMess={this.props.comments.errMess}
@@ -83,27 +90,35 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <Switch>
-          <Route path="/home" component={HomePage} />
-          <Route
-            exact
-            path="/menu"
-            component={() => <Menu dishes={this.props.dishes} />}
-          />
-          <Route path="/menu/:dishId" component={DishWithId} />
-          <Route
-            path="/aboutus"
-            component={() => <About leaders={this.props.leaders} />}
-          />
-          <Route
-            exact
-            path="/contactus"
-            component={() => (
-              <Contact resetFeedbackForm={this.props.resetFeedbackForm} />
-            )}
-          />
-          <Redirect to="/home" />
-        </Switch>
+        <TransitionGroup>
+          <CSSTransition
+            key={this.props.location.key}
+            classNames="page"
+            timeout={300}
+          >
+            <Switch location={this.props.location}>
+              <Route path="/home" component={HomePage} />
+              <Route
+                exact
+                path="/menu"
+                component={() => <Menu dishes={this.props.dishes} />}
+              />
+              <Route path="/menu/:dishId" component={DishWithId} />
+              <Route
+                path="/aboutus"
+                component={() => <About leaders={this.props.leaders} />}
+              />
+              <Route
+                exact
+                path="/contactus"
+                component={() => (
+                  <Contact resetFeedbackForm={this.props.resetFeedbackForm} />
+                )}
+              />
+              <Redirect to="/home" />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
         <Footer />
       </div>
     );

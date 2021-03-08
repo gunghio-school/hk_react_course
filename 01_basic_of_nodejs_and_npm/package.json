@@ -1,0 +1,16 @@
+{
+  "name": "01_basic_of_nodejs_and_npm",
+  "version": "1.0.0",
+  "description": "Test directory to learn Git and Node",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "Olmo Barberis",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

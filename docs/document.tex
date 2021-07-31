@@ -1,0 +1,52 @@
+\documentclass[twoside]{supsistudent} 
+
+
+\setlength{\parindent}{0pt}
+
+\usepackage{url}
+\usepackage{listings}
+
+% Crea un capitolo senza numerazione che pero` appare nell'indice %
+\newcommand{\problemchapter}[1]{%
+  \chapter*{#1}%
+  \addcontentsline{toc}{chapter}{#1}%
+\markboth{#1}{#1}
+}
+
+% Numerazione delle appendici secondo norma
+\addto\appendix{
+\renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}}
+
+\setcounter{secnumdepth}{5} 	%per avere più livelli nei titoli
+\setcounter{tocdepth}{5}		%per avere più livelli nell'indice
+
+
+\titolo{Full-Stack Web Development with React Specialization (Hong Kong University)}
+\studente{Olmo Barberis}
+\modulo{HK\_Seminar}
+
+\begin{document}
+
+\pagenumbering{alph}
+\maketitle
+\onehalfspacing
+\frontmatter
+
+
+\pagenumbering{roman}
+
+\newpage
+\mainmatter
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+The purpose of this document is to provide on overview of all the topics covered during the \textit{Full-Stack Web Development with React Specialization} on \textit{Coursera}\footnote{https://www.coursera.org/specializations/full-stack-react}. The original course is composed of four parts, but the \textit{HK\_Seminar} will cover only two parts: an introduction to React, a front-end framework for developing single-page web application,and server-side development with NodeJS, Exrepss and MongoDB.
+
+\input{chapters/frontend-react.tex}
+
+% \bibliographystyle{unsrt}
+% \nocite{*}
+% \bibliography{bibliografia}
+
+\end{document}

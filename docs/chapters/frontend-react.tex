@@ -76,4 +76,21 @@ New action are propagated through the systems in response to user interaction an
 \subsubsection*{Redux}
 Redux is the place to store the state of the application and allow to have a consistent way to access it. Redux is widely adapted by the React community, but is not strictly connected to React itself. Redux make state mutations predictable.
 The state is a single object and is the single source of truth, it is read only and the only way to change the state is through actions. Every change has to made with pure functions that takes the previous state and return a newly mutated one.
-Using Redux is possible to implement logging utilities, api handling, undo/redo of a state and many other features.
+Using Redux is possible to implement logging utilities, api handling, undo/redo of a state and many other features.  
+The store holds the current state value as a plain JavaScript object. There is some utilities provided from Redux to manage the store:
+\begin{itemize}
+    \item \textit{createStore} - method that allow to create a store with an initial state
+    \item \textit{dispatch} - update the state with the provided action object
+    \item \textit{subscribe} - accepts a callback function that will be run every time an action is dispatched
+\end{itemize}
+
+The bindings between React and Redux is possble using the package \textit{react-redux}. It will provide a function \textit{connect()} that generates a wrapper container that subscribes to the store. It takes 2 additional arguments:
+\begin{itemize}
+    \item \textit{mapStateToProps()} - called every time the store state changes. Return an object full of data with each field being a prop for the wrapped component
+    \item \textit{mapDispatchToProps()} - eceives the dispatch() method and should return an object full of functions that us dispatch()
+\end{itemize}
+
+Surrounding the React App with a tag <Provider> allows to provide the store as an attribute and make it accessible as a singleton to all the connected components.
+
+\subsubsection*{React-Redux-Form}
+\textit{React-readux-form} is a versatile, fast and intuitive library for creating complex and performant forms in React using Redux, providing a collection of reducer and action creators. Form data are stored in a Redux store in a model. There is no need to do any creation or reducer function and it supports also validation for forms. It is suitable to use when there is need to persist form data across component mounting and unmounting.

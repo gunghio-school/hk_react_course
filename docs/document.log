@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.24)  7 SEP 2021 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.24)  9 SEP 2021 00:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -250,29 +250,36 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
- (/home/olmo/Projects/hk_react_course/docs/document.aux)
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count275
+\float@exts=\toks26
+\float@box=\box53
+\@float@everytoks=\toks27
+\@floatcapt=\box54
+) (/home/olmo/Projects/hk_react_course/docs/document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 30.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 29.
+(Font)              scaled to size 10.40245pt on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -310,64 +317,64 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
+\scratchcounter=\count276
 \scratchdimen=\dimen166
-\scratchbox=\box53
-\nofMPsegments=\count276
-\nofMParguments=\count277
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count278
+\scratchbox=\box55
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count279
 \MPscratchDim=\dimen167
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box54
+\AtBeginShipoutBox=\box56
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 29.
-\c@lstlisting=\count281
+(lastpage)             ! on input line 30.
+\c@lstlisting=\count282
 <logoprima.png, id=1, 483.60675pt x 99.61215pt>
 File: logoprima.png Graphic file (type png)
 <use logoprima.png>
-Package pdftex.def Info: logoprima.png  used on input line 32.
+Package pdftex.def Info: logoprima.png  used on input line 33.
 (pdftex.def)             Requested size: 483.69684pt x 99.63165pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 32.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 32.
+(Font)              scaled to size 13.67995pt on input line 33.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 33.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 32.
+(Font)              scaled to size 23.63593pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 32.
+(Font)              scaled to size 7.59998pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 32.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.29996pt on input line 32.
+(Font)              scaled to size 13.29996pt on input line 33.
 <logoverticale.png, id=2, 69.25874pt x 649.42625pt>
 File: logoverticale.png Graphic file (type png)
 <use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 32.
+Package pdftex.def Info: logoverticale.png  used on input line 33.
 (pdftex.def)             Requested size: 21.54396pt x 202.01456pt.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/olmo/Projects/hk_react_course/docs/logoprima.png> </home/olmo/Projects/hk_react_course/docs/logoverticale.png>] [2]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.40245pt on input line 44.
+(Font)              scaled to size 10.40245pt on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 44.
+(Font)              scaled to size 8.54997pt on input line 47.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 47.
  (/home/olmo/Projects/hk_react_course/docs/chapters/frontend-react.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.67995pt on input line 1.
@@ -400,74 +407,187 @@ Package pdftex.def Info: logoverticale.png  used on input line 20.
 File: assets/react-event-handling.png Graphic file (type png)
 <use assets/react-event-handling.png>
 Package pdftex.def Info: assets/react-event-handling.png  used on input line 23.
-(pdftex.def)             Requested size: 418.25368pt x 152.14574pt.
+(pdftex.def)             Requested size: 334.60422pt x 121.71951pt.
 <assets/class-vs-functional.png, id=25, 2364.835pt x 2188.175pt>
 File: assets/class-vs-functional.png Graphic file (type png)
 <use assets/class-vs-functional.png>
-Package pdftex.def Info: assets/class-vs-functional.png  used on input line 36.
-(pdftex.def)             Requested size: 418.25368pt x 387.0098pt.
+Package pdftex.def Info: assets/class-vs-functional.png  used on input line 41.
+(pdftex.def)             Requested size: 334.60422pt x 309.58113pt.
 File: logoverticale.png Graphic file (type png)
 <use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 45.
+Package pdftex.def Info: logoverticale.png  used on input line 42.
 (pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
  [2 </home/olmo/Projects/hk_react_course/docs/assets/react-event-handling.png>]
 File: logoheader.png Graphic file (type png)
 <use logoheader.png>
-Package pdftex.def Info: logoheader.png  used on input line 45.
+Package pdftex.def Info: logoheader.png  used on input line 60.
 (pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
 File: logoverticale.png Graphic file (type png)
 <use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 45.
+Package pdftex.def Info: logoverticale.png  used on input line 60.
 (pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
  [3 </home/olmo/Projects/hk_react_course/docs/assets/class-vs-functional.png>]
-File: logoverticale.png Graphic file (type png)
-<use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 75.
-(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
- [4]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 10.40245pt on input line 82.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 85.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [4]
 File: logoheader.png Graphic file (type png)
 <use logoheader.png>
-Package pdftex.def Info: logoheader.png  used on input line 97.
+Package pdftex.def Info: logoheader.png  used on input line 109.
 (pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
 File: logoverticale.png Graphic file (type png)
 <use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 97.
+Package pdftex.def Info: logoverticale.png  used on input line 109.
 (pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
  [5]
 File: logoverticale.png Graphic file (type png)
 <use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 118.
+Package pdftex.def Info: logoverticale.png  used on input line 131.
 (pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
- [6]) 
-AED: lastpage setting LastPage
+ [6]
+<assets/hooks.png, id=44, 1435.3625pt x 1059.96pt>
+File: assets/hooks.png Graphic file (type png)
+<use assets/hooks.png>
+Package pdftex.def Info: assets/hooks.png  used on input line 138.
+(pdftex.def)             Requested size: 334.60422pt x 247.0851pt.
+) (/home/olmo/Projects/hk_react_course/docs/chapters/backend-node.tex
 File: logoheader.png Graphic file (type png)
 <use logoheader.png>
-Package pdftex.def Info: logoheader.png  used on input line 52.
+Package pdftex.def Info: logoheader.png  used on input line 1.
 (pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
 File: logoverticale.png Graphic file (type png)
 <use logoverticale.png>
-Package pdftex.def Info: logoverticale.png  used on input line 52.
+Package pdftex.def Info: logoverticale.png  used on input line 1.
 (pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
-[7] (/home/olmo/Projects/hk_react_course/docs/document.aux) ) 
+ [7 </home/olmo/Projects/hk_react_course/docs/assets/hooks.png>]
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 1.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [8
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 1.
+<assets/modulenode.png, id=52, 1234.6125pt x 807.015pt>
+File: assets/modulenode.png Graphic file (type png)
+<use assets/modulenode.png>
+Package pdftex.def Info: assets/modulenode.png  used on input line 12.
+(pdftex.def)             Requested size: 418.25368pt x 273.39635pt.
+
+Underfull \vbox (badness 3792) has occurred while \output is active []
+
+File: logoheader.png Graphic file (type png)
+<use logoheader.png>
+Package pdftex.def Info: logoheader.png  used on input line 30.
+(pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 30.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [9]
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 45.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [10 </home/olmo/Projects/hk_react_course/docs/assets/modulenode.png>]
+<assets/router.png, id=60, 1198.4775pt x 554.07pt>
+File: assets/router.png Graphic file (type png)
+<use assets/router.png>
+Package pdftex.def Info: assets/router.png  used on input line 63.
+(pdftex.def)             Requested size: 334.60422pt x 154.69046pt.
+File: logoheader.png Graphic file (type png)
+<use logoheader.png>
+Package pdftex.def Info: logoheader.png  used on input line 69.
+(pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 69.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [11 </home/olmo/Projects/hk_react_course/docs/assets/router.png>]
+<assets/passport-mongoose.png, id=66, 1774.63pt x 915.42pt>
+File: assets/passport-mongoose.png Graphic file (type png)
+<use assets/passport-mongoose.png>
+Package pdftex.def Info: assets/passport-mongoose.png  used on input line 78.
+(pdftex.def)             Requested size: 334.60422pt x 172.59065pt.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 88.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [12 </home/olmo/Projects/hk_react_course/docs/assets/passport-mongoose.png>]
+<assets/session.png, id=71, 1216.545pt x 843.15pt>
+File: assets/session.png Graphic file (type png)
+<use assets/session.png>
+Package pdftex.def Info: assets/session.png  used on input line 98.
+(pdftex.def)             Requested size: 334.60422pt x 231.89912pt.
+File: logoheader.png Graphic file (type png)
+<use logoheader.png>
+Package pdftex.def Info: logoheader.png  used on input line 113.
+(pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 113.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [13 </home/olmo/Projects/hk_react_course/docs/assets/session.png>]
+<assets/population.png, id=76, 809.0225pt x 481.8pt>
+File: assets/population.png Graphic file (type png)
+<use assets/population.png>
+Package pdftex.def Info: assets/population.png  used on input line 125.
+(pdftex.def)             Requested size: 334.60422pt x 199.2669pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 126.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [14]) (/home/olmo/Projects/hk_react_course/docs/chapters/conclusion.tex
+File: logoheader.png Graphic file (type png)
+<use logoheader.png>
+Package pdftex.def Info: logoheader.png  used on input line 1.
+(pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 1.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [15 </home/olmo/Projects/hk_react_course/docs/assets/population.png>]
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 1.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+ [16
+
+]) 
+AED: lastpage setting LastPage
+File: logoheader.png Graphic file (type png)
+<use logoheader.png>
+Package pdftex.def Info: logoheader.png  used on input line 59.
+(pdftex.def)             Requested size: 199.16928pt x 12.14133pt.
+File: logoverticale.png Graphic file (type png)
+<use logoverticale.png>
+Package pdftex.def Info: logoverticale.png  used on input line 59.
+(pdftex.def)             Requested size: 13.35057pt x 125.19212pt.
+[17] (/home/olmo/Projects/hk_react_course/docs/document.aux) ) 
 Here is how much of TeX's memory you used:
- 6865 strings out of 481239
- 102196 string characters out of 5920377
- 500757 words of memory out of 5000000
- 21994 multiletter control sequences out of 15000+600000
- 577549 words of font info for 71 fonts, out of 8000000 for 9000
+ 6969 strings out of 481239
+ 104105 string characters out of 5920377
+ 501757 words of memory out of 5000000
+ 22081 multiletter control sequences out of 15000+600000
+ 580279 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,16n,49p,657b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,16n,49p,722b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/olmo/Projects/hk_react_course/docs/document.pdf (9 pages, 322915 bytes).
+Output written on /home/olmo/Projects/hk_react_course/docs/document.pdf (19 pages, 722502 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,30 +19,30 @@ Every component has a local state which can hold multiple information that can b
 
 Handling event is possible in a similar way as on DOM elements:
 
-\begin{figure}[h]
-    \includegraphics[width=\textwidth]{assets/react-event-handling.png}
-    \caption{Event handling when clicking on div}
-    \label{fig:event-handling}
-\end{figure}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{assets/react-event-handling.png}
+\end{center}
 
-In Figure \ref{fig:event-handling} is possible to see how map a function to a click event on the React element \texttt{Card}.
+In the above figure is possible to see how map a function to a click event on the React element \texttt{Card}.
 
 \subsubsection*{Lifecycle}
 React provides life cycle hooks/methods that can be invoked to perform certain operations. A component is created and then mounted in the application, and when it's not required anymore is unmounted. There are three stages of the lifecycle: mounting, updating, and unmounting. Each stage provide, when component is declared as class, several methods like a constructor (mounting), \texttt{componentDidMount()} (called after mounting is finished), \texttt{render()} (call when rendering UI) and many others.
-
-\subsubsection*{Functonal vs Class}
-Until the release of \texttt{React 16.8} in 2018, there were two ways of declaring a component: class component or functional component. Functional components are s JavaScript function that returns a React element, can receive props but cannot provide local state or lifecycle hooks. 
-\begin{figure}
-    \includegraphics[width=\textwidth]{assets/class-vs-functional.png}
-    \caption{Ways to define a functional components as function or arrow function}
-\end{figure}
-
-React 16.8 introduced React Hooks to use lifecycle hooks also in a functional component. This topic is not covered in the course but will be discussed in the appendix of this document.
 
 \subsubsection*{Document Object Model}
 In the browser, there is an object called \texttt{Browser DOM} (Document Object Model) and is the representation of the structure and data of a webpage. React uses a lightweight version of DOM called \texttt{Virtual DOM}, which uses an in-memory tree data structure of plain JavaScript objects, is extremely fast to manipulate compared to browser DOM and is fully recreated on every setState. 
 
 A diffing algorithm detects which nodes are changed and updates only the minimum number of components in the sub-tree that is updated.
+
+React 16.8 introduced React Hooks to use lifecycle hooks also in a functional component. This topic is not covered in the course but will be discussed in the end of this chapter.
+
+\subsubsection*{Functonal vs Class}
+Until the release of \texttt{React 16.8} in 2018, there were two ways of declaring a component: class component or functional component. Functional components are s JavaScript function that returns a React element, can receive props but cannot provide local state or lifecycle hooks. 
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{assets/class-vs-functional.png}
+\end{center}
+
+In the above figure is possible to see how a functional component is defined.
+
 
 \subsubsection*{React Router}
 React Router gives the ability to navigate between views using links. It's a module that needs to be additionally installed into the React application called \texttt{react-router-dom}. It is a collection of navigational components that enable navigation among views and support browser-based bookmarkable URLs to navigate in the web app. It is also possible to pass optional parameters.
@@ -125,4 +125,17 @@ There were two libraries when the course was delivered, which were widely used f
 The last update in \textit{react-animnation-component} is dated 04 April 2018 and, because of that, was skipped during this course.
 On the other hand, \textit{react-transition-group} is still widely used and maintained. It provides a set of components for managing component states (including mounting and unmounting) over time, specifically designed with animation in mind. The most common components are <Transition>, <CSSTransition>, and <TransitionGroup>.
 A Transition is used to describe the transition from one component to another with some states: entered, exiting, or exited. It is used to animate the mounting and unmounting of a component. A set of <Transition> components can be grouped in a list using the <TransitionGroup> tag.
-CSSTransition is applied together with <Transition>. It applies a pair of class names during the transition's appear, enter, and exit stages. It also uses props to decide when to apply the transition classes
+CSSTransition is applied together with <Transition>. It applies a pair of class names during the transition's appear, enter, and exit stages. It also uses props to decide when to apply the transition classes 
+
+
+\subsection*{React Hooks}
+React Hooks were not covered in the course, but since they are a significant change made by React 16.8, I decided to go over them anyway.
+Hooks have radically changed how development is done in React, making class-defined components obsolete in favor of functional components.
+
+Hooks provide some functions that allow for manipulating the internal state of functional components. For example, the useState() function permits the insertion and manipulation of the state within a component.
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{assets/hooks.png}
+\end{center}
+
+useEffect is another important hook that allows manipulating the state during the lifecycle of the component. It replaces the componentDidMount, componentDidUpdate and componentWillUnmount functions with a single function. It is possible to cause the component to render when one or more parts of the state are changed and define its custom hooks. Hooks can only be used by a component at the top level, not within loops or conditions.
